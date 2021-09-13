@@ -49,7 +49,7 @@ Vagrant.configure('2') do |config|
   # $ vagrant plugin install --plugin-source https://rubygems.org/ --plugin-prerelease vagrant-vbguest
   config.vbguest.auto_update = true
 
-  config.vm.box = 'saucy64'
+  config.vm.box = 'larryli/saucy64'
   config.vm.box_url = 'http://cloud-images.ubuntu.com/vagrant/saucy/current/saucy-server-cloudimg-amd64-vagrant-disk1.box'
 
   config.vm.network :forwarded_port, guest: 8080, host:8888
